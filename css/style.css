@@ -1,0 +1,295 @@
+/*
+SELECTORS
+	selector - label
+	------------------------
+	h2{
+		color: red;
+		background-color: blue;
+	}
+	p{
+		color: red;
+		background: black;
+	}
+
+	selector - multiple labels
+	---------------------------
+	h2,p{
+		color: red;
+		background-color: black;
+	}
+
+	selector - id
+	---------------------------
+	#h2_1 {
+		color: red;
+		background: black;
+	}
+
+	selector - class
+	--------------------------
+	.p_1{
+
+		color: red;
+
+		background: black;
+
+	}
+
+	selector - class,id
+	--------------------------
+	#h2_1, .p_1 {
+
+		color: red;
+
+		background: black;
+
+	}
+
+	selector - spesific id,class
+	------------------------
+	#id_p1.class1{
+
+		color: red;
+
+		background: black;
+
+	}
+
+	selector - a
+	---------------------
+	Removing the underline setting of "a" label
+	a {
+
+		text-decoration: none;
+
+	}
+
+	selector - spesific selection exercises
+	-------------------------
+	ul li a{
+		text-decoration: none;
+	}
+	-------------------------
+	.class1 span{
+		color: red;
+	}
+	-------------------------
+	.class1 .span2{
+		color: red;
+	}
+
+	selector - universal
+	-------------------------
+	*{ 
+		font-size: 20px;
+	}
+	}
+*/
+
+/*
+HTML ORDERS
+	!!!!  Html works from up to down !!!!
+	------------------------
+	h2 {
+		color: blue;
+	}
+	#h2_1{
+		color: cyan;
+	}
+	------------------------
+	
+	in this situation it'll be red.
+	-------------------------
+	h1 {
+		color blue;
+		color red;
+	}
+	-------------------------
+	
+	!important will avoid the order.
+	#h2_2 {
+	color: red !important;
+	}
+	h2{
+		color: blue;
+	}
+
+*/
+h2#mynotes{
+	color: rgba(255,0,0,0.5); /*last parameter is opacity in here.*/
+	opacity: 0.5;
+}
+h2#Loremipsum{
+	color: #68b6d6;
+	border-width: 5px;
+	border-color: red;
+	border-style: solid; /* dotted , dashed */
+	/*
+	border-left-width: 5px;
+	border-left-style: dotted;
+	border-left-color: blue;
+	*/
+	border-radius: 10px;
+}
+.box1{
+	display: inline-block;
+	width: 640px;
+	height: 360px;
+	background-image: url("../images/background1.jpg");
+	background-size: cover;
+}
+.box2{
+	display: inline-block; /* inlinedan farkı width ve height verebiliyoruz
+							  blocktan farkı sonraki elementler yanına geliyor.
+	*/
+	max-width: 700px;
+	max-height: 700px;
+	width: 500px;
+	height: 200px;
+	background: seagreen;
+	/*background-color: seagreen;  if you gonna use multiple colors*/
+	color: white;
+}
+.box3{
+	background-color: red;
+	/*width: 50%;*/
+	max-width: 700px;
+	height: 500px;
+	border-radius: 500px;
+	margin: 0 auto;
+}
+.box4 {
+	/*margin-left: 10px;
+	margin-top: 10px;*/
+
+	/* margin order: top right bottom left 
+	margin: 50px 50px 50px 50px; */
+
+	/* margin order: top-bottom right-left 
+	margin: 50px 50px; */
+	background: grey;
+	width: 500px;
+	height: 200px;
+	border: 5px solid black;
+	padding: 40px;
+
+	/*This is important !!!!!!!!*/
+	box-sizing: border-box;
+
+	/*
+	margin-left: auto;
+	margin-right: auto;
+
+	equals :
+    */
+    margin: 200px auto;
+}
+div.heading1{
+	text-align: left;
+}
+div.heading2{
+	text-align: center;
+}
+div.heading3{
+	text-align: right;
+	margin-bottom: 150px;
+}
+p#pletterspacing{
+	letter-spacing: 1px;
+	margin-bottom: 150px;
+}
+
+p#pletterspacing span {
+	text-decoration: line-through;
+}
+p#pletterspacing a {
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+h3 {
+	text-transform: capitalize;
+	font-size: 48px; 
+	font-family: Arial, Helvetica, sans-serif;
+}
+p.fontattr{
+	font-size: 24px;
+	line-height: 40px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+/*
+
+USING PSEUDO CLASS
+----------------------
+
+selector:pseudo_class{
+	
+}
+
+Classes
+----------------
+hover: while the cursor on element;
+link: selects all unvisited links;
+visited: after you clicked the element;
+active: while you clicking;
+
+focus: for inputs;
+*/
+a#home:link {
+	color: red;
+}
+
+a#home:visited {
+	color: black;
+}
+
+a#home:hover {
+	color: green;
+}
+
+a#home:active {
+	color: blue;
+}
+
+input#input1 {
+	font-size: 1.5em;
+	padding: 10px;
+	border-radius: 4px;
+	border: 1px solid black;
+
+}
+input#input1:focus {
+	outline: 0;
+	border:2px solid red;
+}
+
+/*Spesific selection pseudo elements*/
+/*
+Syntax
+-------------------------
+selection::pseudoelement{
+	
+}
+Pseudo Elements
+-------------------
+
+first-line : selects first line;
+first-letter : selects first letter;
+after : selects the next element;
+before : selects the begining of element;
+*/
+.pseudoselection::first-line{
+	color:red;
+}
+.pseudoselection::first-letter{
+	color:blue;
+	font-size: 50px;
+}
+.pseudoselection::after{
+	content: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png);
+}
+.pseudoselection::before{
+	content: "Paragraf Oncesi";
+}

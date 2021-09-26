@@ -1,0 +1,177 @@
+First use of css is using as inline element
+but its using rarely.
+
+<h1 style="color: red"> Title </h1>
+
+Second use is using the style element in head.
+
+<head>
+        <style>
+        
+        /*   Comment line
+         
+        ---------Selector Using-------- 
+         selector {  
+            css-attribute : value
+         }
+
+
+        */
+
+        </style>
+</head>
+
+
+
+
+/*
+SELECTORS
+	selector - label
+	------------------------
+	h2{
+		color: red;
+		background-color: blue;
+	}
+	p{
+		color: red;
+		background: black;
+	}
+
+	selector - multiple labels
+	---------------------------
+	h2,p{
+		color: red;
+		background-color: black;
+	}
+
+	selector - id
+	---------------------------
+	#h2_1 {
+		color: red;
+		background: black;
+	}
+
+	selector - class
+	--------------------------
+	.p_1{
+
+		color: red;
+
+		background: black;
+
+	}
+
+	selector - class,id
+	--------------------------
+	#h2_1, .p_1 {
+
+		color: red;
+
+		background: black;
+
+	}
+
+	selector - spesific id,class
+	------------------------
+	#id_p1.class1{
+
+		color: red;
+
+		background: black;
+
+	}
+
+	selector - a
+	---------------------
+	Removing the underline setting of "a" label
+	a {
+
+		text-decoration: none;
+
+	}
+
+	selector - spesific selection exercises
+	-------------------------
+	ul li a{
+		text-decoration: none;
+	}
+	-------------------------
+	.class1 span{
+		color: red;
+	}
+	-------------------------
+	.class1 .span2{
+		color: red;
+	}
+
+	selector - universal
+	-------------------------
+	* {
+		font-size: 20px;
+	}
+*/
+
+/*
+HTML ORDERS
+	!!!!  Html works from up to down !!!!
+	------------------------
+	h2 {
+		color: blue;
+	}
+	#h2_1{
+		color: cyan;
+	}
+	------------------------
+	
+	in this situation it'll be red.
+	-------------------------
+	h1 {
+		color blue;
+		color red;
+	}
+	-------------------------
+	
+	!important will avoid the order.
+	#h2_2 {
+	color: red !important;
+	}
+	h2{
+		color: blue;
+	}
+
+*/
+
+/*
+
+USING PSEUDO CLASS
+----------------------
+
+selector:pseudo_class{
+	
+}
+
+Classes
+----------------
+hover: while the cursor on element;
+link: selects all unvisited links;
+visited: after you clicked the element;
+active: while you clicking;
+
+focus: for inputs;
+*/
+
+/*Spesific selection pseudo elements*/
+/*
+Syntax
+-------------------------
+selection::pseudoelement{
+	
+}
+Pseudo Elements
+-------------------
+
+first-line : selects first line;
+first-letter : selects first letter;
+after : selects the next element;
+before : selects the begining of element;
+*/
