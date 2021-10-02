@@ -2,9 +2,6 @@ html {
 	font-family: 'Open Sans', sans-serif;
 	font-style: italic;
 	font-size: 50px;
-}
-
-body {
 	background-color: #cccccc;
 	background-image: url("../images/background2.jpg");
 	background-repeat: no-repeat;
@@ -12,12 +9,14 @@ body {
 	background-position: center center;
 	background-size: cover;
 }
+
 div {
+	margin-left: 20px;
 	margin-top: 45px;
 }
 
 .fa-instagram {
-	margin-top: 2.5em;
+	margin-top: 4em;
 	margin-left: 10.3em;
 }
 
