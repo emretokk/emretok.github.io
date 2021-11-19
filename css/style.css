@@ -1,4 +1,6 @@
 html {
+	margin: 0;
+	padding: 0;
 	font-family: 'Open Sans', sans-serif;
 	font-style: italic;
 	font-size: 50px;
@@ -10,29 +12,50 @@ html {
 	background-size: cover;
 }
 
-div {
-	display: inline-block;
-	position: absolute;
-	margin-left: 20px;
-}
+@media screen and (min-width: 800px){
+	img#pyramidgif{
+		display: none;
+		/*position: absolute;
+		width: 400px;
+		height: 400px;
+		display: inline-block;
+		margin-left: 170px;*/
+	}
+	#senkal{
+		display: none;
+	}
+	.fa-instagram {
+		position: absolute;
+		margin-left: 10.5em;
+		margin-top: 6em;
+	}
+	.fa-twitter{
+		position: absolute;
+		margin-left: 11.5em;
+		margin-top: 6em;
+	}
+	.fa-github{
+		position: absolute;
+		margin-left: 12.5em;
+		margin-top: 6em;
+	}
 
-img#pyramidgif{
-	display: inline-block;
-	margin-left: 20px;
-	margin-top: 80px;
-}
+	a {
+		color: black;
+	}
 
-.fa-instagram {
-	margin-top: 3.3em;
-	margin-left: 4.5em;
-}
+	a:hover {
+		color: lightgoldenrodyellow;
+	}
 
-a {
-	color: black;
-}
+	#samurlu{
+		width: 260px;
+		height: 320px;
+		display: absolute;
+		margin-left: 4.87em;
+		margin-top: 1.2em;
+	}
 
-a:hover {
-	color: lightgoldenrodyellow;
 }
 
 @media screen and (max-width: 800px) {
@@ -55,24 +78,46 @@ a:hover {
 		}
 
 		img#pyramidgif{
-			display: inline-block;
+			display: none;
+		}
+
+		#senkal{
 			position: absolute;
-			margin-top: 0;
-			margin-left: 240px;
-			max-width: 70px;
-			max-height: 70px;
-			display: inline-block;
+			text-align: center;
+			color: rgb(31, 231, 31);
+			margin-left: 5em;
+			margin-top: 2.5em;
+			text-shadow: 2px 2px #313131;
 		}
 
 		.fa-instagram {
-			margin-top: 2.2em;
-			margin-left: 4em;
+			position: absolute;
+			margin-left: 5.8em;
+			margin-top: 7.2em;
+		}
+		.fa-twitter{
+			position: absolute;
+			margin-left: 5.7em;
+			margin-top: 8.6em;
+		}
+		.fa-github{
+			position: absolute;
+			margin-left: 5.6em;
+			margin-top: 10.1em;
 		}
 
 		a {
-			color: black;
+			color: #cb006e;
 		}
 
 		a:hover {
 			color: lightgoldenrodyellow;
 		}
+		#samurlu{
+			position: absolute;
+			width: 230px;
+			height: 300px;
+			margin-left: 6em;
+			margin-top: 12em;
+		}
+}
