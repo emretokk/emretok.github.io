@@ -1,123 +1,107 @@
+/*
+Background	    #282a36	  40 42 54	     231° 15% 18%	Background Color
+Current Line	#44475a	  68 71 90	     232° 14% 31%	Current Line Color
+Selection	    #44475a	  68 71 90	     232° 14% 31%	Selection Color
+Foreground   	#f8f8f2	  248 248 242    60° 30% 96%	Foreground Color
+Comment	        #6272a4	  98 114 164	 225° 27% 51%	Comment Color
+Cyan	        #8be9fd	  139 233 253	 191° 97% 77%	Cyan Color
+Green       	#50fa7b	  80 250 123	 135° 94% 65%	Green Color
+Orange        	#ffb86c	  255 184 108	 31° 100% 71%	Orange Color
+Pink	        #ff79c6	  255 121 198	 326° 100% 74%	Pink Color
+Purple	        #bd93f9	  189 147 249	 265° 89% 78%	Purple Color
+Red	            #ff5555	  255 85 85      0° 100% 67%	Red Color
+Yellow      	#f1fa8c	  241 250 140	 65° 92% 76%	Yellow Color
+*/
+
 html {
 	margin: 0;
 	padding: 0;
-	font-family: 'Open Sans', sans-serif;
-	font-style: italic;
-	font-size: 50px;
-	background-color: #cccccc;
-	background-image: url("../images/background2.jpg");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center center;
-	background-size: cover;
+	font-family: 'Rubik';
+	background-color: #282a36;
 }
 
 @media screen and (min-width: 800px){
-	img#pyramidgif{
-		display: none;
-		/*position: absolute;
-		width: 400px;
+	body{
+		margin: 0;
+		padding: 0;
+	}
+	header{
+		display: flex;
+		width: 100%;
+		height: 200px;
+
+	}
+	div.title{
+		margin: auto auto;
+		color: #f8f8f2;
+		font-family: 'Pacifico', cursive;
+		font-size: 40px;
+	}
+	div.link-container{
+		width: 100%;
 		height: 400px;
-		display: inline-block;
-		margin-left: 170px;*/
 	}
-	#senkal{
-		display: none;
+	a{
+		display: flex;
+		width: 10%;
+		height: 10%;
+		margin: 2em auto;
+		text-decoration: none;
+		color: #8be9fd;
 	}
-	.fa-instagram {
-		position: absolute;
-		margin-left: 10.5em;
-		margin-top: 6em;
-	}
-	.fa-twitter{
-		position: absolute;
-		margin-left: 11.5em;
-		margin-top: 6em;
-	}
-	.fa-github{
-		position: absolute;
-		margin-left: 12.5em;
-		margin-top: 6em;
+	a:visited{
+		color: #8be9fd;
 	}
 
-	a {
-		color: black;
+	a:hover{
+		color: #f8f8f2;
 	}
 
-	a:hover {
-		color: lightgoldenrodyellow;
+	i{
+		margin: auto auto;
+		font-size: 3em;
 	}
-
-	#samurlu{
-		width: 260px;
-		height: 320px;
-		display: absolute;
-		margin-left: 4.87em;
-		margin-top: 1.2em;
-	}
-
 }
 
 @media screen and (max-width: 800px) {
-		html {
+	body{
 		margin: 0;
-		font-family: 'Open Sans', sans-serif;
-		font-style: italic;
-		font-size: 25px;
-		background-color: #cccccc;
-		background-image: url("../images/linus.jpg");
-		background-size: cover;
-		background-position: 55% 50%;
-		background-repeat: no-repeat;
-		}
+		padding: 0;
+	}
+	header{
+		display: flex;
+		width: 100%;
+		height: 200px;
 
-		div {
-			display: inline-block;
-			position: absolute;
-			margin-left: 20px;
-		}
+	}
+	div.title{
+		margin: auto auto;
+		color: #f8f8f2;
+		font-family: 'Pacifico', cursive;
+		font-size: 40px;
+	}
+	div.link-container{
+		width: 100%;
+		height: 300px;
+	}
+	a{
+		display: flex;
+		width: 10%;
+		height: 10%;
+		margin: 2em auto;
+		text-decoration: none;
+		color: #8be9fd;
+	}
+	a:visited{
+		color: #8be9fd;
+	}
 
-		img#pyramidgif{
-			display: none;
-		}
+	a:hover{
+		color: #f8f8f2;
+	}
 
-		#senkal{
-			position: absolute;
-			text-align: center;
-			color: rgb(31, 231, 31);
-			margin-left: 5em;
-			margin-top: 2.5em;
-			text-shadow: 2px 2px #313131;
-		}
-
-		.fa-instagram {
-			position: absolute;
-			margin-left: 5.8em;
-			margin-top: 7.2em;
-		}
-		.fa-twitter{
-			position: absolute;
-			margin-left: 5.7em;
-			margin-top: 8.6em;
-		}
-		.fa-github{
-			position: absolute;
-			margin-left: 5.6em;
-			margin-top: 10.1em;
-		}
-
-		a {
-			color: #cb006e;
-		}
-
-		a:hover {
-			color: lightgoldenrodyellow;
-		}
-		#samurlu{
-			position: absolute;
-			width: 230px;
-			height: 300px;
-			margin-left: 6em;
-			margin-top: 12em;
-		}
+	i{
+		margin: auto auto;
+		font-size: 3em;
+	}
 }
